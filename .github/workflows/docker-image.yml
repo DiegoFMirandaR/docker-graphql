@@ -33,7 +33,9 @@ jobs:
 
     - name: Push Docker Image
       run: |
+        echo "Inicio del push"
         docker push dmiranda8051/docker-graphql:0.0.2
+        echo "Fin del push"
     
 #    - name: Build the Docker image
 #      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
