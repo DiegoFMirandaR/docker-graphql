@@ -30,11 +30,13 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t dmiranda8051/docker-graphql:0.0.2 .
+        docker build -t dmiranda8051/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
         echo "Inicio del push"
         docker push dmiranda8051/docker-graphql:0.0.2
+        docker push dmiranda8051/docker-graphql:latest
         echo "Fin del push"
     
 #    - name: Build the Docker image
